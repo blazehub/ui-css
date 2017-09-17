@@ -20,7 +20,7 @@ $breakpoints:(xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
 $screen in $breakpoints {
     @media screen and (min-width: $screen) {
         @for $col from 1 through $max-col {
-            $equation:100%/$col;
+            $equation:(100%/$max-col)*$col;
             .ui-col-#{$breakpoint}-#{$col} {
                 width: $equation;
             }
