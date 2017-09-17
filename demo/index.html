@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>12 Column Grid System</title>
+    <link rel="stylesheet" href="../dist/responsive-grid.css">
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: monospace;
+            padding: 0;
+            margin: 0;
+            background: gold;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .grid {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            transition: 0.2s;
+        }
+        
+        .grid:after,
+        .grid:before {
+            content: ' ';
+            display: table;
+        }
+        
+        .grid:after {
+            clear: both;
+        }
+        
+        .col {
+            padding: 1em;
+            margin: 8px;
+            background: white;
+            border-radius: 3px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+            color: turquoise;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="ui-row">
+            <div class="ui-col-md-1">
+                <div class="col">12 Column</div>
+            </div>
+            <div class="ui-col-md-2">
+                <div class="col">6 Column</div>
+            </div>
+            <div class="ui-col-md-2">
+                <div class="col">6 Column</div>
+            </div>
+            <div class="ui-col-md-3">
+                <div class="col">3 Column</div>
+            </div>
+            <div class="ui-col-md-3">
+                <div class="col">3 Column</div>
+            </div>
+            <div class="ui-col-md-3">
+                <div class="col">3 Column</div>
+            </div>
+            <div class="ui-col-md-4">
+                <div class="col">2 Column</div>
+            </div>
+            <div class="ui-col-md-4">
+                <div class="col">2 Column</div>
+            </div>
+            <div class="ui-col-md-4">
+                <div class="col">2 Column</div>
+            </div>
+            <div class="ui-col-md-4">
+                <div class="col">2 Column</div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1</div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1</div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1 </div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1 </div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1 </div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1</div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1</div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1 </div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1 </div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1 </div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1</div>
+            </div>
+            <div class="ui-col-md-12">
+                <div class="col">1</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
